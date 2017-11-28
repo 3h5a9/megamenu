@@ -1,0 +1,14 @@
+@media (max-width: 575px) {
+	.burger-nav {}
+
+	.mainNav {
+		ul { float: none; overflow: hidden;
+			li { width: 100%;
+				a { padding: .25em; 
+					&:hover,
+					&:focus { background-color: #FFF }
+				}
+			}
+		}
+	}
+}

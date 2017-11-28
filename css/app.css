@@ -1,0 +1,72 @@
+#mainHeader {
+  background-color: #494c5a; }
+  #mainHeader .branding h1 {
+    margin-bottom: 0; }
+    #mainHeader .branding h1 img {
+      display: block;
+      width: 100%; }
+
+/*
+	--------------------
+	Main Navigation
+	--------------------
+*/
+.mainNav {
+  line-height: 44px;
+  min-height: 76px; }
+  .mainNav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    float: right; }
+    .mainNav ul li {
+      display: inline-block;
+      float: left;
+      position: relative; }
+      .mainNav ul li:hover ul {
+        visibility: visible;
+        opacity: 1;
+        transition: all .5s; }
+      .mainNav ul li a {
+        display: block;
+        padding: 1em;
+        transition: all .5s;
+        color: #FFF; }
+        .mainNav ul li a:hover, .mainNav ul li a:focus {
+          text-decoration: none;
+          background-color: #ddd;
+          color: #333; }
+    .mainNav ul ul {
+      position: absolute;
+      background-color: #494c5a;
+      visibility: hidden;
+      opacity: 0; }
+      .mainNav ul ul li {
+        width: 225px;
+        text-align: left; }
+        .mainNav ul ul li:hover ul {
+          visibility: visible;
+          display: block;
+          transition: all .5s; }
+        .mainNav ul ul li a {
+          padding: .25em .5em; }
+      .mainNav ul ul ul {
+        left: 100%;
+        top: 0;
+        position: absolute;
+        visibility: hidden;
+        display: none;
+        transition: all .5s; }
+
+@media (max-width: 575px) {
+  .mainNav ul {
+    float: none;
+    overflow: hidden; }
+    .mainNav ul li {
+      width: 100%; }
+      .mainNav ul li a {
+        padding: .25em; }
+        .mainNav ul li a:hover, .mainNav ul li a:focus {
+          background-color: #FFF; } }
+
+/*# sourceMappingURL=app.css.map */
