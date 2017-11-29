@@ -29,7 +29,7 @@
 
 		ul {
 			position: absolute; background-color: $primary-color; visibility: hidden; opacity: 0;
-			li { width: 225px; text-align: left; 
+			li { width: 225px; text-align: left; display: block; float: none;
 				&:hover {
 					ul { visibility: visible; display: block; transition: all .5s; }
 				}
@@ -37,6 +37,7 @@
 			}
 			ul { left: 100%; top: 0; position: absolute; visibility: hidden; display: none; transition: all .5s;
 			}
+            .lastLavel { top: 0%; left: -100%; }
 		}
 	}
 }
